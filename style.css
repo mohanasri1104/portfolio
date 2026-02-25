@@ -1,40 +1,49 @@
 body {
-  transition: background 0.4s, color 0.4s;
-}
-
-.navbar {
-  background: white;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+  transition: all 0.4s ease;
 }
 
 .hero {
-  height: 100vh;
+  min-height: 90vh;
 }
 
-body {
-  padding-top: 70px;
+.hero-img {
+  max-width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: float 4s ease-in-out infinite;
 }
 
-/* Reduce hero height */
-.hero {
-  min-height: 80vh;
-  padding-top: 60px;
-  display: flex;
-  align-items: center;
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-.section-title {
-  font-weight: bold;
-  margin-bottom: 20px;
+.about-card {
+  max-width: 750px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .project-card {
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #4e73df, #1cc88a);
+  color: white;
+  border: none;
+}
+
+.btn-gradient:hover {
+  opacity: 0.85;
 }
 
 /* DARK MODE */
@@ -44,14 +53,155 @@ body {
 }
 
 .dark-mode .navbar {
-  background-color: #1e1e1e;
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .dark-mode .bg-light {
   background-color: #1e1e1e !important;
 }
 
-.dark-mode .card {
-  background-color: #2a2a2a;
+/* SKILLS */
+.skill-box {
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Internship Card */
+.internship-card {
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode Support */
+.dark-mode .skill-box {
+  background-color: #1f1f1f;
   color: white;
+}
+
+.dark-mode .internship-card {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* NAVBAR FIX */
+.navbar {
+  transition: all 0.4s ease;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar .nav-link:hover {
+  color: #1cc88a !important;
+}
+
+.dark-mode .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.hero,
+#about,
+#skills,
+#projects,
+#internship,
+#contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+/* ===== NAVBAR SOLID FIX ===== */
+
+.navbar {
+  background-color: #ffffff !important;   /* Solid white */
+  backdrop-filter: none !important;       /* Remove glass effect */
+  opacity: 1 !important;                  /* Remove transparency */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* Remove Bootstrap transparency */
+.navbar-light {
+  background-color: #ffffff !important;
+}
+
+/* Dark Mode Navbar */
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;   /* Solid dark */
+  opacity: 1 !important;
+}
+
+/* Navbar text colors */
+.navbar .nav-link {
+  color: #333 !important;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #1cc88a !important;
+}
+
+/* Toggler fix */
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
 }
