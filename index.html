@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohanasri | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mohanasri S</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="themeToggle" class="btn btn-outline-primary ms-3">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Hi, I'm Mohanasri</h1>
+    <p class="lead">Computer Science Engineer | Full Stack Developer</p>
+
+    <!-- Buttons -->
+    <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+      <a href="Mohanasri S.pdf" download class="btn btn-primary btn-lg">
+        Download Resume
+      </a>
+
+      <a href="#projects" class="btn btn-outline-primary btn-lg">
+        View My Work
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+
+        <div class="card shadow-sm border-0 about-card">
+          <div class="card-body text-center p-4">
+
+            <h2 class="section-title mb-3">About Me</h2>
+
+            <p>
+              I am a motivated Computer Science and Engineering student with a strong academic
+              record (CGPA: 9.61) and a passion for building real-world software solutions.
+              I specialize in full-stack development using React, Spring Boot, and MongoDB.
+            </p>
+
+            <p>
+              I enjoy transforming ideas into scalable applications and continuously improving
+              my skills in modern web technologies. My goal is to contribute to innovative
+              technology solutions while growing as a software developer.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3">Java</div>
+      <div class="col-md-3">JavaScript</div>
+      <div class="col-md-3">React</div>
+      <div class="col-md-3">Spring Boot</div>
+      <div class="col-md-3 mt-3">MongoDB</div>
+      <div class="col-md-3 mt-3">MySQL</div>
+      <div class="col-md-3 mt-3">Bootstrap</div>
+      <div class="col-md-3 mt-3">Git & GitHub</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <div class="card-body">
+          <h5>Bank Management System</h5>
+          <p>
+            A full-stack banking application built using React, Spring Boot, and MongoDB.
+            The system allows users to create accounts, deposit and withdraw funds,
+            track transaction history, and manage customer details securely.
+          </p>
+          <ul>
+            <li>Secure account creation & login</li>
+            <li>Real-time transaction management</li>
+            <li>REST API integration</li>
+            <li>Responsive dashboard UI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <div class="card-body">
+          <h5>AQI Dashboard</h5>
+          <p>
+            A React-based web application that visualizes real-time air quality data using API integration.
+            The dashboard presents pollution levels through dynamic charts for easy understanding.
+          </p>
+          <ul>
+            <li>Real-time API data fetching</li>
+            <li>Interactive charts using Chart.js</li>
+            <li>Location-based AQI insights</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <div class="card-body">
+          <h5>Library Management System</h5>
+          <p>
+            Java and MySQL based system using JDBC for efficient library operations.
+            It enables book catalog management, issue/return tracking, and student records.
+          </p>
+          <ul>
+            <li>CRUD operations with JDBC</li>
+            <li>Book issue & return tracking</li>
+            <li>Efficient database management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <div class="card-body">
+          <h5>Tic Tac Toe Game</h5>
+          <p>
+            Developed during internship using React. Features interactive UI and state
+            management to track player turns and game results.
+          </p>
+          <ul>
+            <li>React state management</li>
+            <li>Dynamic UI updates</li>
+            <li>Responsive gameplay design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Internship Experience</h2>
+
+    <div class="card shadow-sm border-0 mt-4">
+      <div class="card-body">
+        <h5 class="fw-bold">Web Development Intern</h5>
+        <p class="mb-1">Emglitz Technologies, Salem</p>
+        <p class="text-muted">Duration: 1 Month</p>
+
+        <p>
+          During my internship, I developed a React-based Tic Tac Toe game and gained
+          hands-on experience in frontend development, component design, and Git-based
+          version control. This experience strengthened my understanding of responsive UI
+          development and real-world project workflows.
+        </p>
+
+        <ul>
+          <li>Built interactive React components</li>
+          <li>Implemented responsive UI design</li>
+          <li>Used Git & GitHub for version control</li>
+          <li>Improved debugging & problem-solving skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="section-title">Contact</h2>
+  <p>
+  Email:
+    mohanasrimohana601@gmail.com
+  </p>
+
+    <p>Phone: 9585157541</p>
+    <p>LinkedIn: <a href = "https://www.linkedin.com/in/mohanasris2004/" target = "blank"> linkedin.com/in/mohanasris2004 </a></p>
+  </div>
+</section>
+
+<footer class="text-center py-3">
+  © 2026 Mohanasri
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
